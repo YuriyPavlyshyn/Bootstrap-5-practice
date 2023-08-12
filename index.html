@@ -12,7 +12,41 @@
 </head>
 
 <body>
-    
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center text-white">Відео курс по верстці для починаючих HTML та CSS</h1>
+                    <div class="itd_play" data-bs-toggle="modal" data-bs-target="#openModal">
+                        <!-- data-bs-toggle="modal" data-bs-target="#exampleModal - дані два атрибути підключають модальне вікно до кнопки -->
+                        <div class="itd_triangle"></div>
+                    </div>
+                    <a href="#footer" class="btn btn-itd btn-lg text-uppercase">Замовити</a>
+                    <!-- "#footer" - буде поєднано з айдішніком в футері, внаслідок чого буде виконуватися автоматичний плавний перехід на розділ футера. це реалізується за допомогою вже вбудованого функціоналу бутстрапом в файлі site/js/bootstrap.js -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <footer id="footer">
+
+    </footer>
+
+    <!-- Модальне вікно -->
+    <div class="modal fade" id="openModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Трейлер відео курсу по HTML та CSS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class='embed-container'><iframe src='https://www.youtube.com/embed//sFRrfUt7jc0' frameborder='0' allowfullscreen></iframe></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="site/js/bootstrap.js"></script>
 </body>
 
