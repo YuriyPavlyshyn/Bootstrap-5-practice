@@ -9,7 +9,9 @@ header, footer {
 
 section {
     padding: 100px 0 0 0;
+    background-color: #eee;
 }
+
 header {
     padding: 150px 0;
 }
@@ -84,10 +86,6 @@ header, footer {
     height: 100%;
 }
 
-.myAccordion {
-    background-color: #eee;
-}
-
 .accordion-color {
     background-color: #05b1b1;
 }
@@ -97,10 +95,6 @@ header, footer {
 }
 
 /* розділ: "Про курс" */
-.about {
-    background-color: #eee;
-}
-
 .about i {
     font-size: 25px;
     color: var(--color2);
@@ -139,4 +133,11 @@ header, footer {
 
 .bg2 {
     background-color: var(--color2);
+}
+
+.forwhom h5 {
+    padding: 50px;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, var(--color2), var(--color1));
 }
