@@ -3,20 +3,26 @@
     --color2: #52339a;
 }
 
-header, footer, section {
+header, footer {
     padding: 100px 0;
 }
 
+section {
+    padding: 100px 0 0 0;
+}
 header {
-    padding: 200px 0;
+    padding: 150px 0;
 }
 
 header, footer {
-    background: url(/site/img/pattern.png) ,var(--color1);
-    background: url(/site/img/pattern.png) ,-moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
-    background: url(/site/img/pattern.png) ,-webkit-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
-    background: url(/site/img/pattern.png) ,linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);
-    filter: url(/site/img/pattern.png) ,progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1), endColorstr=var(--color2),GradientType=1);
+    /* після url(має бути дві крапки ".."), будь - які інші шляхи до того самого файлу чомусь не працюють взагалі, а інші відображаються тільки при відображенні сайту через "Live". ./site/img/pattern.png, /site/img/pattern.png та site/img/pattern.png - не працюють*/
+    background: url(../img/pattern.png), var(--color1);
+    background: url(../img/pattern.png), -moz-linear-gradient(left,  var(--color1) 0%, var(--color2) 100%);
+    background: url(../img/pattern.png), -webkit-linear-gradient(left,  var(--color1) 0%,var(--color2) 100%);
+    background: url(../img/pattern.png), linear-gradient(to right,  var(--color1) 0%,var(--color2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1), endColorstr=var(--color1),GradientType=1 ); /* для роботи в інтернет експловрері */
+
+
     background-size: contain;
 }
 
@@ -78,6 +84,10 @@ header, footer {
     height: 100%;
 }
 
+.myAccordion {
+    background-color: #eee;
+}
+
 .accordion-color {
     background-color: #05b1b1;
 }
@@ -86,6 +96,47 @@ header, footer {
     background-color: #6d4fb3;
 }
 
-.accordion-padding {
-    padding: 75px 0;
+/* розділ: "Про курс" */
+.about {
+    background-color: #eee;
+}
+
+.about i {
+    font-size: 25px;
+    color: var(--color2);
+}
+
+.itd_circle {
+    margin: 0 auto 15px;
+    width: 70px;
+    height: 70px;
+    border: 2px solid var(--color1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-gradient {
+    border: 1px solid;
+    border-image-slice: 1;
+    margin: 20px 0 30px 0;
+    border-image-source: linear-gradient(to left, var(--color1), var(--color2));
+}
+
+/* Колір */
+.color1 {
+    color: var(--color1);
+}
+
+.color2 {
+    color: var(--color2);
+}
+
+.bg1 {
+    background-color: var(--color1);
+}
+
+.bg2 {
+    background-color: var(--color2);
 }
