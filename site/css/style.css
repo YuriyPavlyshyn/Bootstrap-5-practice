@@ -8,7 +8,7 @@ header, footer {
 }
 
 section {
-    padding: 100px 0 0 0;
+    padding: 50px 0 50px 0;
     background-color: #eee;
 }
 
@@ -118,6 +118,15 @@ header, footer {
     border-image-source: linear-gradient(to left, var(--color1), var(--color2));
 }
 
+/* розділ "Акардіон" */
+.main-accordion-color {
+    color: var(--color1);
+}
+
+.main-button-color {
+    color: var(--color1);
+}
+
 /* Колір */
 .color1 {
     color: var(--color1);
@@ -135,9 +144,22 @@ header, footer {
     background-color: var(--color2);
 }
 
+.forwhom, .myAccordion {
+    background-color: #fff;
+}
+
 .forwhom h5 {
     padding: 50px;
     border: 2px solid;
     border-image-slice: 1;
     border-image-source: linear-gradient(to left, var(--color2), var(--color1));
+}
+
+/* міняємо колір svg-шки */
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='purple' %3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-body-color {
+    color: rgb(193, 29, 214);
 }
