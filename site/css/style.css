@@ -144,7 +144,7 @@ header, footer {
     background-color: var(--color2);
 }
 
-.forwhom, .myAccordion, .learning {
+.forwhom, .myAccordion, .learning, .user-feedback {
     background-color: #fff;
 }
 
@@ -221,4 +221,50 @@ header, footer {
     background-color: white;
     text-align: justify;
     word-spacing: normal;
+}
+
+/* розділ про відгуки користувачів */
+.user-box-style {
+    text-indent: 40px;
+    padding: 10px;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, var(--color1), var(--color2));
+    font-size: 1rem;
+    background-color: white;
+    text-align: justify;
+    word-spacing: normal;
+    background-color: #eee;
+}
+.user-box-style h5 {
+    text-indent: 0;
+}
+
+.user-image {
+    display: table;
+    margin: 0 auto;
+    border: 2px solid;
+    border-radius: 50% 20% / 10% 40%;
+    border-color: var(--color1);
+    padding: 3px;
+    background-color: var(--color2);
+}
+
+.user-box-style > blockquote {
+    margin: 0;
+}
+
+.one {
+    padding: 15px;
+    background: white;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+.one::before {
+    content: '\201C';
+}
+
+.one::after {
+    content: '\201D';
 }
