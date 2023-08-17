@@ -182,3 +182,43 @@ header, footer {
     font-weight: 500;
     line-height: 1;
 }
+
+/* Розділ про автора */
+.author > .container {
+    padding: 30px;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, var(--color1), var(--color2));
+    font-size: 1rem;
+    background-color: #eee;
+    text-align: justify;
+    word-spacing: normal;
+}
+
+.author h5 {
+    padding: 30px;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, var(--color1), var(--color2));
+    font-size: 1rem;
+    background-color: white;
+    text-align: justify;
+    word-spacing: normal;
+}
+
+.author h2 {
+    margin: 0;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.author img {
+    padding: 10px;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, var(--color1), var(--color2));
+    font-size: 1rem;
+    background-color: white;
+    text-align: justify;
+    word-spacing: normal;
+}
