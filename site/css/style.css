@@ -144,7 +144,7 @@ header, footer {
     background-color: var(--color2);
 }
 
-.forwhom, .myAccordion {
+.forwhom, .myAccordion, .learning {
     background-color: #fff;
 }
 
@@ -153,6 +153,7 @@ header, footer {
     border: 2px solid;
     border-image-slice: 1;
     border-image-source: linear-gradient(to left, var(--color2), var(--color1));
+    background-color: #eee;
 }
 
 /* міняємо колір svg-шки */
@@ -162,4 +163,22 @@ header, footer {
 
 .accordion-body-color {
     color: rgb(193, 29, 214);
+}
+
+/* Процес навчання */
+.learning h5 {
+    padding: 30px;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, var(--color1), var(--color2));
+    font-size: 1rem;
+    background-color: #eee;
+    text-align: justify;
+    word-spacing: normal;
+}
+
+.learning h2 {
+    margin: 0;
+    font-weight: 500;
+    line-height: 1;
 }
