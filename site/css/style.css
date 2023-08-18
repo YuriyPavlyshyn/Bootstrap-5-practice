@@ -3,10 +3,6 @@
     --color2: #52339a;
 }
 
-header, footer {
-    padding: 100px 0;
-}
-
 section {
     padding: 50px 0 50px 0;
     background-color: #eee;
@@ -14,6 +10,10 @@ section {
 
 header {
     padding: 150px 0;
+}
+
+footer {
+    padding: 50px 0;
 }
 
 header, footer {
@@ -268,3 +268,16 @@ header, footer {
 .one::after {
     content: '\201D';
 }
+
+/* Розділ оплати */
+.commerce {
+    padding: 30px;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, var(--color1), var(--color2));
+    font-size: 1rem;
+    background-color: white;
+    text-align: justify;
+    word-spacing: normal;
+}
+
